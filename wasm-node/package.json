@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build:wasm": "cd ../wasm-rust && wasm-pack build --target nodejs",
+    "build:wasm": "cd ../wasm-rust && cargo install wasm-pack && wasm-pack build --target nodejs",
     "build:node": "tsc",
     "build": "pnpm run build:wasm && pnpm install && pnpm run build:node",
     "start": "node dist/main.js",
