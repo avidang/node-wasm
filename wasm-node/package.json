@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "build:wasm": "cd ../wasm-rust && cargo install wasm-pack && wasm-pack build --target nodejs",
-    "build:node": "tsc",
-    "build": "pnpm run build:wasm && pnpm install && pnpm run build:node",
+    "build:node": "pnpm install && tsc",
+    "build": "pnpm run build:wasm && pnpm run build:node",
     "start": "node dist/main.js",
     "dev": "nodemon src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
