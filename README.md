@@ -48,8 +48,8 @@ This example demonstrates how to use WebAssembly (Wasm) with Rust in a Node.js p
 5. **Create a new Node.js project:**
 
     ```sh
-    mkdir node-wasm
-    cd node-wasm
+    mkdir wasm-node
+    cd wasm-node
     pnpm init
     ```
 
