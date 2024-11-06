@@ -6,7 +6,7 @@
   "scripts": {
     "build:wasm": "cd ../wasm-rust && wasm-pack build --target nodejs",
     "build:node": "tsc",
-    "build": "pnpm run build:wasm && pnpm run build:node",
+    "build": "pnpm run build:wasm && pnpm install && pnpm run build:node",
     "start": "node dist/main.js",
     "dev": "nodemon src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
