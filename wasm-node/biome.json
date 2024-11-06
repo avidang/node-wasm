@@ -7,10 +7,16 @@
     "enabled": true,
     "rules": {
       "recommended": true,
-      "correctness": { "noUnusedImports": "error" }
+      "correctness": {
+        "all": true
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
+      },
+      "style": { "useImportType": "error" }
     }
   },
   "files": {
-    "include": ["./src/**/*.ts"]
+    "include": ["src/**/*.ts"]
   }
 }

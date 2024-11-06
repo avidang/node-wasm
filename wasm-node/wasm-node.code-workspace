@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "../wasm-node"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.codeActionsOnSave": {
+      "quickFix.biome": "explicit"
+    },
+    "editor.formatOnSave": false,
+  }
+}
