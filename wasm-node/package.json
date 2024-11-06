@@ -2,7 +2,6 @@
   "name": "node-wasm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build:wasm": "cd ../wasm-rust && wasm-pack build --target nodejs",
     "build:node": "tsc",

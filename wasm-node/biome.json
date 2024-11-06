@@ -6,10 +6,11 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": { "noUnusedImports": "error" }
     }
   },
   "files": {
-    "include": ["src/**/*.ts"]
+    "include": ["./src/**/*.ts"]
   }
 }
