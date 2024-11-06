@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:wasm": "cd ../wasm-rust && wasm-pack build --target nodejs",
+    "build:node": "tsc",
+    "build": "pnpm run build:wasm && pnpm run build:node",
+    "start": "node src/main.js",
     "dev": "nodemon src/main.ts",
     "debug": "nodemon --inspect src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +24,6 @@
     "biome": "^0.3.3",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "wasm-rust": "file:wasm-rust/pkg"
+    "wasm-rust": "file:../wasm-rust/pkg"
   }
 }
